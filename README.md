@@ -1,830 +1,345 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Explore 20+ hands-on Linux, DevOps, AI, VoIP & SMS training programs at School of Freelancing. 819+ students trained, 98% success rate. Linux freelancing, GitLab, Telnyx, Twilio & more.">
-<meta name="keywords" content="linux training, devops training, AI agent training, VoIP training, SMS training, linux freelancing course, sysadmin training, cloud infrastructure training, online linux certification">
-<meta name="title" content="All Training Programs | 20+ Courses | School of Freelancing">
-<title>All Training Programs | 20+ Courses | School of Freelancing | Linux & DevOps</title>
-<meta name="author" content="School of Freelancing">
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<meta name="language" content="English">
-<meta name="revisit-after" content="7">
+# Claude AI Platform Training Module
 
-<!-- Canonical URL - Page Specific -->
-<link rel="canonical" href="https://www.schooloffreelancing.com/training.html">
+A comprehensive, hands-on, 5-day training program for the **full management and operation of the Claude AI Platform** — covering the Claude Developer Platform (API), Claude Code, Claude.ai/Claude Cowork for teams, and the administrative, security, and governance controls needed to run Claude at organizational scale.
 
-<!-- Mobile & Accessibility -->
-<meta name="theme-color" content="#00ff41">
-<meta name="apple-mobile-web-app-capable" content="yes">
+![Duration](https://img.shields.io/badge/Duration-5%20Days-blue)
+![Level](https://img.shields.io/badge/Level-Beginner%20to%20Advanced-orange)
+![Format](https://img.shields.io/badge/Format-Hands--on%20Labs-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="School Of Freelancing">
-<meta property="og:url" content="https://www.schooloffreelancing.com/training.html">
-<meta property="og:title" content="All Training Programs | 20+ Courses | School of Freelancing">
-<meta property="og:description" content="20+ hands-on training programs: Linux freelancing, DevOps, AI agents, VoIP. 819+ students, 98% success rate. Enroll today!">
-<meta property="og:image" content="https://www.schooloffreelancing.com/images/og-training.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:alt" content="School Of Freelancing - Training Programs Catalog">
-<meta property="og:locale" content="en_US">
+> ⚠️ **Living document notice:** Anthropic ships new models, plans, and console features frequently. This README defines the training *structure and objectives*; instructors and participants should verify current product specifics (model names, plan tiers, limits, pricing) against official documentation before each cohort — see [Additional Resources](#-additional-resources).
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="All Training Programs | School of Freelancing">
-<meta name="twitter:description" content="20+ hands-on training programs for freelancers. Linux, DevOps, AI, VoIP & more. 98% success rate.">
-<meta name="twitter:image" content="https://www.schooloffreelancing.com/images/og-training.jpg">
-<meta name="twitter:creator" content="@FreelancingOf">
+---
 
-<!-- Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "CollectionPage",
-      "@id": "https://www.schooloffreelancing.com/training.html",
-      "name": "All Training Programs",
-      "description": "20+ hands-on training programs for Linux freelancers",
-      "url": "https://www.schooloffreelancing.com/training.html",
-      "isPartOf": { "@id": "https://www.schooloffreelancing.com/#website" }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.schooloffreelancing.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "All Training",
-          "item": "https://www.schooloffreelancing.com/training.html"
-        }
-      ]
-    },
-    {
-      "@type": "EducationEvent",
-      "name": "Linux Freelancing Training",
-      "description": "Comprehensive hands-on Linux training for freelancers",
-      "url": "https://www.schooloffreelancing.com/training.html#linuxt",
-      "offers": {
-        "@type": "Offer",
-        "price": "650",
-        "priceCurrency": "USD"
-      }
-    },
-    {
-      "@type": "Course",
-      "name": "Linux Freelancing Training",
-      "description": "Become a top-earning freelance Linux Systems Administrator",
-      "provider": {
-        "@type": "Organization",
-        "@id": "https://www.schooloffreelancing.com/#organization"
-      },
-      "educationLevel": "Advanced",
-      "learningResourceType": "Training",
-      "offers": {
-        "@type": "Offer",
-        "price": "650",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      }
-    }
-  ]
-}
-</script>
+## 📋 Table of Contents
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+- [Overview](#-overview)
+- [Learning Objectives](#-learning-objectives)
+- [Audience](#-audience)
+- [Prerequisites](#-prerequisites)
+- [Lab Environment](#-lab-environment)
+- [Training Schedule](#-training-schedule)
+  - [Day 1: Platform Landscape & Console Fundamentals](#day-1-platform-landscape--console-fundamentals)
+  - [Day 2: Building with the API](#day-2-building-with-the-api)
+  - [Day 3: Claude Code & Agentic Workflows](#day-3-claude-code--agentic-workflows)
+  - [Day 4: Organization Management, Security & Governance](#day-4-organization-management-security--governance)
+  - [Day 5: Scaling, Cost Management & Production Operations](#day-5-scaling-cost-management--production-operations)
+- [Repository Structure](#-repository-structure)
+- [Getting Started](#-getting-started)
+- [Lab Exercises](#-lab-exercises)
+- [Assessment & Certification](#-assessment--certification)
+- [Reference Architecture](#-reference-architecture)
+- [Troubleshooting Guide](#-troubleshooting-guide)
+- [Additional Resources](#-additional-resources)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-</head>
-<body>
+---
 
-<canvas id="matrix-canvas" role="presentation" aria-hidden="true"></canvas>
+## 🎯 Overview
 
-<!-- ===== NAVBAR ===== -->
-<nav class="navbar" role="navigation" aria-label="Main navigation">
-  <div class="nav-container">
-    <a href="index.html" class="nav-logo" aria-label="School of Freelancing Home">
-      <div class="logo-icon" aria-hidden="true">$_</div>
-      <span>School of Freelancing</span>
-    </a>
-    <ul class="nav-links" role="list">
-      <li><a href="index.html" target="_self">Home</a></li>
-      <li><a href="training.html" class="active" target="_self">Training</a></li>
-      <li><a href="support.html" target="_self">Support</a></li>
-      <li><a href="testimonials.html" target="_self">Testimonials</a></li>
-      <li><a href="about.html" target="_self">About us</a></li>        
-      <li><a href="contact.html" class="nav-cta" target="_self">Contact</a></li>
-    </ul>
-    <button class="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
+This training module prepares administrators, developers, and platform teams to fully manage the **Claude AI Platform** across its surfaces: the Console (organization/workspace administration), the Claude Developer Platform (API), Claude Code (agentic coding), and Claude.ai/Claude Cowork (end-user products). The course combines conceptual instruction with hands-on labs, culminating in participants standing up a governed, cost-monitored, production-ready Claude deployment for an organization — complete with role-based access, security controls, and usage reporting.
 
-<!-- PAGE HERO -->
-<section class="page-hero" aria-label="Training programs hero">
-  <div class="container">
-      <h1 data-reveal>Built by Freelancers,<br><span style="color:var(--text-primary)">For Freelancers</span></h1>
-      </div>
-</section>
+## 🎓 Learning Objectives
 
-<!-- FILTERS -->
-<section class="section" style="padding-top:0;" aria-label="Training course filters">
-  <div class="container">
+By the end of this training, participants will be able to:
 
-    <!-- Filter Bar -->
-    <div data-reveal style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:40px; align-items:center; justify-content:space-between;">
-      <div style="display:flex; gap:8px; flex-wrap:wrap;" role="group" aria-label="Category filters">
-        <button class="btn btn-primary btn-sm filter-btn" data-filter="all" aria-pressed="true">All Training</button>
-        <button class="btn btn-secondary btn-sm filter-btn" data-filter="linux" aria-pressed="false">Linux</button>
-        <button class="btn btn-secondary btn-sm filter-btn" data-filter="devops" aria-pressed="false">DevOps</button>
-        <button class="btn btn-secondary btn-sm filter-btn" data-filter="ai" aria-pressed="false">AI</button>
-        <button class="btn btn-secondary btn-sm filter-btn" data-filter="voip" aria-pressed="false">VoIP</button>
-        <button class="btn btn-secondary btn-sm filter-btn" data-filter="sms" aria-pressed="false">SMS</button>
-      </div>
-    </div>
+- Navigate the Claude Console: organizations, workspaces, API keys, and the model catalog
+- Make robust API calls to Claude (Messages API), including streaming, system prompts, and multi-turn conversations
+- Select the right Claude model for a given task based on capability, latency, and cost trade-offs
+- Use tool use (function calling), vision, and extended thinking features appropriately
+- Install, configure, and operate Claude Code for agentic software development workflows, including MCP server integration
+- Understand and evaluate Claude Cowork and other agentic/desktop surfaces for non-developer knowledge work
+- Administer an organization: user provisioning, roles and permissions, SSO/SCIM integration, and workspace segmentation
+- Implement usage governance: rate limits, spend limits, and per-workspace budget controls
+- Apply security and compliance best practices: API key rotation, audit logs, data retention settings, and content safety configuration
+- Monitor usage, cost, and performance across teams; build internal reporting and chargeback processes
+- Design a rollout and change-management plan for introducing Claude across an organization
 
-    <!-- Courses Grid -->
-    <div class="courses-grid" id="courses-grid">
+## 👥 Audience
 
-    <!-- Linux Freelancing Training -->
-      <article class="course-card" data-reveal data-delay="0" data-category="linux" id="linuxt">
- <div class="course-banner" style="background:linear-gradient(135deg,#0d2b0d,#1a4a1a);"><img width="40%" height="40%" src="./images/linux.png" alt="Linux Freelancing Training - System Administrator Certification"></div>
-         <div class="course-body">
-          <div class="course-tags">
-            <a href="https://github.com/SchoolOfFreelancing/Linux-Freelancing-Training.git/" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-            <span class="tag tag-cyan">Beginner Level</span>
-          </div>
-   <h3 class="course-title"><a href="https://github.com/SchoolOfFreelancing/Linux-Freelancing-Training.git/" target="_blank"><span class="tag tag-green">Linux Freelancing Training</a></h3>
-          <p class="course-desc">Launch your Linux freelancing career and win high-paying clients through direct outreach and global marketplaces.</p>
-            <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 90 Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Guaranteed Minimum Income (GMI)</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-                    <div class="course-meta">
-            <div>
-              <span class="course-price">$600</span>
-            </div>
-            <div class="course-info">
-              <span>180 Hours Total Duration (6 Months)</span>
-             
-            </div>
-          </div>
-          <a href="enrollment.html" target="_self" class="btn btn-primary" style="width:100%; justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
-      
-          <!-- Hermes Agent Training -->
-       <article class="course-card" data-reveal data-delay="0" data-category="ai" id="ait">
-         <div class="course-banner" style="background:linear-gradient(135deg,#0d1f2b,#1a3a4a);"><img width="40%" height="40%" src="./images/hermesagent.png" alt="Hermes Agent Training - AI Development"></div>
-        <div class="course-body">
-          <div class="course-tags">
-            <a href="https://github.com/SchoolOfFreelancing/Hermes-Agent-Training.git/" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-            <span class="tag tag-cyan">Advanced Level</span>
-          </div>
-          <h3 class="course-title"><a href="https://github.com/SchoolOfFreelancing/Hermes-Agent-Training.git/" target="_blank"><span class="tag tag-green">Hermes Agent Training</a></h3>
-          <p class="course-desc">Learn Hermes Agents and offer AI automation services to clients through direct outreach and global marketplaces.</p>
-            <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 15 Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Guaranteed Minimum Income (GMI)</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-            <div>
-              <span class="course-price">$200</span>
-              </div>
-            <div class="course-info">
-                  <span>30 Hours Total Duration (6 Days)</span>
-            </div>
-          </div>
-          <a href="enrollment.html" target="_self" class="btn btn-primary" style="width:100%; justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
-      
-      <!-- Odysseus Self-hosted AI -->
-       <article class="course-card" data-reveal data-delay="0" data-category="ai">
-   <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img width="40%" height="40%" src="./images/odysseus.png" alt="AI Workspace Training - Odysseus Setup"></div>
-        <div class="course-body">
-          <div class="course-tags">
-            <a href="https://github.com/SchoolOfFreelancing/Odysseus-AI-Workspace-Training.git/" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-            <span class="tag tag-cyan">Advanced Level</span>
-          </div>
-          <h3 class="course-title"><a href="https://github.com/SchoolOfFreelancing/Odysseus-AI-Workspace-Training.git/" target="_blank"><span class="tag tag-green">Odysseus AI Workspace Training</span></a></h3>
-          <p class="course-desc">Learn to build your own self-hosted Odysseus AI workspace and start offering AI automation services as a freelancer.</p>
-           <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 10 Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Client Acquisition Service Development</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-            <div>
-              <span class="course-price">$200</span>
-            </div>
-            <div class="course-info">
-          <span>20 Hours Total Duration (5 Days)</span>
-            </div>
-          </div>
-          <a href="enrollment.html" target="_self" class="btn btn-primary" style="width:100%; justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
-      
-            <!-- OpenClaw Hands-on Training -->
-     <article class="course-card" data-reveal data-delay="0" data-category="ai">
-<div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img width="35%" height="35%" src="./images/openclaw.png" alt="OpenClaw Hands-on Training"></div>
-       <div class="course-body">
-          <div class="course-tags">
-        <a href="https://github.com/SchoolOfFreelancing/OpenClaw-Hands-on-Training.git/" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-            <span class="tag tag-cyan">ALL LEVELS</span>
-          </div>
-         <h2 class="course-title"><a href="https://github.com/SchoolOfFreelancing/OpenClaw-Hands-on-Training.git/" target="_blank"><span class="tag tag-green">OpenClaw Hands-on Training</span></a></h2>
-          <p class="course-desc">A hands-on Training covering OpenClaw fundamentals, production deployment, and building a profitable service around it.</p>
-                 
-          <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 5 Days Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Client Acquisition Service Development</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$230</span>
-           <div class="course-info">
-             <span>20 Hours Total Duration (5 Days)</span>
-            </div>
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
-   
-        <!-- LocalAI Training -->      
- <article class="course-card" data-reveal data-delay="0" data-category="ai">
-       <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img width="35%" height="40%" src="./images/localai.png" alt="LocalAI Hands-on Training"></div>
-        
-        <div class="course-body">
-          <div class="course-tags">
-           <a href="https://github.com/SchoolOfFreelancing/LocalAI-Hands-on-Training.git/" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-            <span class="tag tag-cyan">ALL LEVELS</span>
-          </div>
-         <h2 class="course-title"><a href="https://github.com/SchoolOfFreelancing/LocalAI-Hands-on-Training.git/" target="_blank"><span class="tag tag-green">LocalAI Hands-on Training</span></a></h2>
-          <p class="course-desc">LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.</p>
-                 
-          <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 5 Days Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Client Acquisition Service Development</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$230</span>
-           <div class="course-info">
-           <span>20 Hours Total Duration (5 Days)</span>
-            </div>
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
-      
-      <!-- ZeroClaw Training -->      
-    <article class="course-card" data-reveal data-delay="0" data-category="ai">
-    <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img width="100%" height="50%" src="./images/zeroclaw.png" alt="ZeroClaw Hands-on Training"></div>
-        
-        <div class="course-body">
-          <div class="course-tags">
-         <a href="https://github.com/SchoolOfFreelancing/ZeroClaw-Hands-on-Training.git/" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-            <span class="tag tag-cyan">ALL LEVELS</span>
-          </div>
-         <h2 class="course-title"><a href="https://github.com/SchoolOfFreelancing/ZeroClaw-Hands-on-Training.git/" target="_blank"><span class="tag tag-green">ZeroClaw Hands-on Training</span></a></h2>
-          <p class="course-desc">A hands-on Training covering ZeroClaw fundamentals, production deployment, and building a profitable service around it.</p>
-                 
-          <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 5 Days Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Client Acquisition Service Development</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$200</span>
-           <div class="course-info">
-             <span>20 Hours Total Duration (5 Days)</span>
-            </div>
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
-      
-      <!-- GitLab Hands-on Training -->
-     <article class="course-card" data-reveal data-delay="0" data-category="devops" id="devopst">
-  <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img width="100%" height="50%" src="./images/gitlab.png" alt="GitLab Hands-on Training"></div>
-        <div class="course-body">
-          <div class="course-tags">
-          <a href="https://github.com/SchoolOfFreelancing/GitLab-Hands-on-Training.git/" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-            <span class="tag tag-cyan">ANY LEVEL</span>
-          </div>
-         <h2 class="course-title"><a href="https://github.com/SchoolOfFreelancing/GitLab-Hands-on-Training.git/" target="_blank"><span class="tag tag-green">GitLab Hands-on Training</span></a></h2>
-    <p class="course-desc">A hands-on Training covering GitLab Community Edition production deployment, core workflows, migration and building a profitable freelance service around GitLab.</p>
-      
-          <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 5 Days Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Client Acquisition Service Development</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$200</span>
-           <div class="course-info">
-             <span>20 Hours Total Duration (5 Days)</span>
-            </div>
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
-      
-       <!-- GitHub Actions Training -->
-      <article class="course-card" data-reveal data-delay="0" data-category="devops">
-       <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img width="35%" height="25%" src="./images/github.png" alt="GitHub Actions Training - Automation & CI/CD"></div>
-        
-        <div class="course-body">
-          <div class="course-tags">
-          <a href="https://github.com/SchoolOfFreelancing/GitHub-Hands-on-Training.git/" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-            <span class="tag tag-cyan">ANY LEVEL</span>
-          </div>
-         <h2 class="course-title"><a href="https://github.com/SchoolOfFreelancing/GitHub-Hands-on-Training.git/" target="_blank"><span class="tag tag-green">GitHub Hands-on Training</span></a></h2>
-          <p class="course-desc">A hands-on Training covering GitHub Enterprise Server (GHES) production deployment, CI/CD with GitHub Actions, migration, and building a profitable freelance service around GHES.</p>
-                 
-     <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 5 Days Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Client Acquisition Service Development</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$200</span>
-           <div class="course-info">
-             <span>20 Hours Total Duration (5 Days)</span>
-            </div>
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
-      
-           
- <!-- Telnyx VoIP Support -->
-      <article class="course-card" data-reveal data-delay="100" data-category="voip" id="voipt">
-         <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img width="35%" height="25%" src="./images/telnyx.png" alt="Telnyx VoIP Training - Telephony Network"></div>
-        <div class="course-body">
-          <div class="course-tags">
-             <a href="https://github.com/SchoolOfFreelancing/Telnyx-VAPI-Training.git/" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-            <span class="tag tag-cyan">ANY LEVEL</span>
-          </div>
-          <h2 class="course-title"><a href="https://github.com/SchoolOfFreelancing/Telnyx-VAPI-Training.git/" target="_blank"><span class="tag tag-green">Telnyx VAPI Training</a></span></h2>
-          <p class="course-desc">A hands-on Training covering production-grade VoIP infrastructure with Telnyx SIP trunking, AI voice assistant development with VAPI, and building a profitable freelance service.</p>
-         <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 5 Days Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Client Acquisition Service Development</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$200</span>
-           <div class="course-info">
-             <span>20 Hours Total Duration (5 Days)</span>
-            </div>
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
+- Platform/IT administrators responsible for provisioning and governing AI tools org-wide
+- Developers and engineering teams building products on the Claude API
+- DevOps/engineering managers evaluating or rolling out Claude Code
+- Security, compliance, and procurement stakeholders involved in AI platform governance
+- Technical leads coordinating a company-wide Claude adoption
 
- <!-- Twilio VoIP Training -->
-  <article class="course-card" data-reveal data-delay="100" data-category="voip">
-         <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img src="./images/twilio.svg" alt="Twilio VoIP Training - Communication Platform"></div>
-        <div class="course-body">
-          <div class="course-tags">
-             <a href="https://github.com/SchoolOfFreelancing/Twilio-Vapi-Training.git/" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-            <span class="tag tag-cyan">Advanced Level</span>
-          </div>
-          <h2 class="course-title"><a href="https://github.com/SchoolOfFreelancing/Twilio-Vapi-Training.git/" target="_blank"><span class="tag tag-green">Twilio Vapi Training</span></a></h2>
-          <p class="course-desc">Learn how to set up and test SIP calls to your Vapi assistant using any SIP client or softphone. You’ll create an assistant, assign it a SIP phone number, and make a call using a SIP URI.</p>
-         <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 5 Days Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Client Acquisition Service Development</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$200</span>
-           <div class="course-info">
-             <span>20 Hours Total Duration (5 Days)</span>
-            </div>
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
+## ✅ Prerequisites
 
- <!-- FusionPBX VoIP Training -->
- <article class="course-card" data-reveal data-delay="100" data-category="voip">
-         <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img width="35%" height="25%" src="./images/fusionpbx.png" alt="FusionPBX VoIP Training"></div>
-        <div class="course-body">
-          <div class="course-tags">
-             <a href="https://github.com/SchoolOfFreelancing/FusionPBX-VoIP-Training.git/" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-            <span class="tag tag-cyan">Advanced Level</span>
-          </div>
-          <h2 class="course-title"><a href="https://github.com/SchoolOfFreelancing/FusionPBX-VoIP-Training.git/" target="_blank"><span class="tag tag-green">FusionPBX VoIP Training</span></a></h2>
-          <p class="course-desc">FusionPBX training that caters to a wide range of individual skill levels, starting from basic setup up to advanced features and configuration.</p>
-          <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 5 Days Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Client Acquisition Service Development</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$200</span>
-           <div class="course-info">
-             <span>20 Hours Total Duration (5 Days)</span>
-            </div>
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
+**Required:**
+- Basic familiarity with REST APIs and JSON
+- Comfort with the command line
+- For Day 3–4: administrative or IT-admin experience (SSO, identity provider concepts) is helpful
 
- <!-- Goautodial VoIP Training -->
-<article class="course-card" data-reveal data-delay="100" data-category="voip">
-         <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img width="35%" height="25%" src="./images/goautodial.png" alt="Goautodial VoIP Training"></div>
-        <div class="course-body">
-          <div class="course-tags">
-           <a href="https://github.com/SchoolOfFreelancing/Goautodial-VoIP-Training.git/" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-            <span class="tag tag-cyan">Advanced Level</span>
-          </div>
-          <h2 class="course-title"><a href="https://github.com/SchoolOfFreelancing/Goautodial-VoIP-Training.git/" target="_blank"><span class="tag tag-green">Goautodial VoIP Training</span></a></h2>
-          <p class="course-desc">Goautodial VoIP training involves mastering the open-source omnichannel contact center suite, which combines Asterisk, Kamailio, and the Vicidial engine to handle calls efficiently.</p>
-           <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 5 Days Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Client Acquisition Service Development</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$200</span>
-           <div class="course-info">
-             <span>20 Hours Total Duration (5 Days)</span>
-            </div>
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
+**Recommended:**
+- Working proficiency in at least one programming language (Python, TypeScript, or similar)
+- Prior exposure to SaaS admin consoles (user/role management, SSO)
+- Basic understanding of cloud cost/usage monitoring concepts
 
- <!-- Ubuntu Linux Training -->
-<article class="course-card" data-reveal data-delay="100" data-category="linux">
-         <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img width="50%" height="30%" src="./images/ubuntu-com-logo.png" alt="Ubuntu Linux Training"></div>
-        <div class="course-body">
-          <div class="course-tags">
-              <a href="https://github.com/SchoolOfFreelancing/Ubuntu-Linux-Training.git/" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-            <span class="tag tag-cyan">Advanced Level</span>
-          </div>
-          <h2 class="course-title"><a href="https://github.com/SchoolOfFreelancing/Ubuntu-Linux-Training.git/" target="_blank"><span class="tag tag-green">Ubuntu Linux Training</span></a></h2>
-          <p class="course-desc">These training provide a step-by-step process to doing development and dev-ops activities on Ubuntu machines, servers or devices.</p>
-          <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 5 Days Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Client Acquisition Service Development</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$200</span>
-           <div class="course-info">
-             <span>20 Hours Total Duration (5 Days)</span>
-            </div>  
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
-      
-       <!-- CentOS Linux Training -->
-      <article class="course-card" data-reveal data-delay="100" data-category="linux">
-         <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img border="0" width="90%" height="70%" src="./images/centos.svg" alt="CentOS Linux Training - Enterprise Linux"></div>
-        <div class="course-body">
-          <div class="course-tags">
-              <a href="https://github.com/SchoolOfFreelancing/CentOS-Linux-Training.git/" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-            <span class="tag tag-cyan">Advanced Level</span>
-          </div>
-          <h2 class="course-title"><a href="https://github.com/SchoolOfFreelancing/CentOS-Linux-Training.git/" target="_blank"><span class="tag tag-green">CentOS Linux Training</span></a></h2>
-          <p class="course-desc">This intensive 5-day CentOS training focuses on practical CentOS system administration, server security, networking, automation, and troubleshooting using real-world scenarios.</p>
-          <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 5 Days Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Client Acquisition Service Development</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$200</span>
-           <div class="course-info">
-             <span>20 Hours Total Duration (5 Days)</span>
-            </div>
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
-      
-    <!-- Ansible AWX Training -->
-    <article class="course-card" data-reveal data-delay="100" data-category="devops">
-         <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img border="0" src="./images/awx.png" alt="Ansible AWX Training"></div>
-        <div class="course-body">
-          <div class="course-tags">
-           <a href="https://github.com/SchoolOfFreelancing/Ansible-AWX-Training.git/" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-            <span class="tag tag-cyan">Advanced Level</span>
-          </div>
-          <h2 class="course-title"><a href="https://github.com/SchoolOfFreelancing/Ansible-AWX-Training.git/" target="_blank"><span class="tag tag-green">Ansible AWX Training</span></a></h2>
-          <p class="course-desc">This Training takes participants from AWX fundamentals through advanced enterprise integration, high availability, security hardening, and day-2 operations.</p>
-          <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 5 Days Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Client Acquisition Service Development</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$200</span>
-           <div class="course-info">
-             <span>20 Hours Total Duration (5 Days)</span>
-            </div>
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
-      
-          <!-- OpenAI Platform Training -->
-       <article class="course-card" data-reveal data-delay="100" data-category="ai">
-         <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img border="0" width="40%" height="40%" src="./images/openai.png" alt="OpenAI Platform Training"></div>
-        <div class="course-body">
-          <div class="course-tags">
-                     <div class="course-tags">
-      <a href="https://github.com/SchoolOfFreelancing/OpenAI-Platform-Training.git" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-      <span class="tag tag-cyan">AI-Powered</span>
-                     
-                     </div>
-          </div>
-          <h2 class="course-title"><a href="https://github.com/SchoolOfFreelancing/OpenAI-Platform-Training.git" target="_blank"><span class="tag tag-green">OpenAI Platform Training</span></a></h2>
-          <p class="course-desc">OpenAI API & Developer Training for Learn how to build AI applications using the OpenAI Platform API.</p>
-          <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 5 Days Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Client Acquisition Service Development</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$200</span>
-           <div class="course-info">
-             <span>20 Hours Total Duration (5 Days)</span>
-            </div>
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
-      
-        <!-- Claude Platform Training -->
-           
-        <article class="course-card" data-reveal data-delay="100" data-category="ai">
-         <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img border="0" width="40%" height="40%" src="./images/claudelogo.png" alt="Claude Platform Training - Anthropic API"></div>
-        <div class="course-body">
-          <div class="course-tags">
-                     <div class="course-tags">
-                     
- <a href="https://github.com/SchoolOfFreelancing/OpenAI-Platform-Training.git" target="_blank"><span class="tag tag-green">Training Modules</span></a>
-      <span class="tag tag-cyan">AI-Powered</span>
-                     
-                     
-                     </div>
-          </div>
-          <h2 class="course-title">Claude Platform Training</h2>
-          <p class="course-desc">Claude API & Developer Training for Learn how to manage & build AI applications using the Claude Platform API.</p>
-          <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 20 Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Guaranteed minimum income (GMI)</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$300</span>
-           <div class="course-info">
-              <span>40 hrs</span>
-              <span>8+ Enrolled</span>
-            </div>
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
-      
-      
-    <!-- Telnyx SMS Training -->
-    <article class="course-card" data-reveal data-delay="100" data-category="sms" id="smst">
-       <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img width="35%" height="25%" src="./images/telnyx.png" alt="Telnyx SMS Training - Bulk SMS API"></div>
-        <div class="course-body">
-          <div class="course-tags">
-            <span class="tag tag-cyan">Hot</span>
-            <span class="tag tag-amber">Intermediate</span>
-          </div>
-          <h2 class="course-title">Telnyx SMS Training</h2>
-          <p class="course-desc">Learn how to send bulk SMS using the Telnyx Messaging API, including A2P 10DLC campaign registration, API authentication, and production-ready SMS integration.</p>
-          <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 25 Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Guaranteed minimum income (GMI)</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$1500</span>
-           <div class="course-info">
-              <span>50 hrs</span>
-              <span>7+ Enrolled</span>
-            </div>
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
+**Not required but helpful:** Experience with another LLM provider's platform or API, prior exposure to Git and CI/CD tooling
 
-    <!-- Twilio SMS Training -->
- <article class="course-card" data-reveal data-delay="100" data-category="sms">
-       <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img width="35%" height="25%" src="./images/twilio.svg" alt="Twilio SMS Training - Messaging API"></div>
-        <div class="course-body">
-          <div class="course-tags">
-            <span class="tag tag-cyan">Hot</span>
-            <span class="tag tag-amber">Intermediate</span>
-          </div>
-          <h2 class="course-title">Twilio SMS Training</h2>
-          <p class="course-desc">Learn how to send bulk SMS using the Twilio Messaging API, including A2P 10DLC campaign registration, API authentication, and production-ready SMS integration.</p>
-          <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 25 Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Guaranteed minimum income (GMI)</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$1500</span>
-           <div class="course-info">
-              <span>50 hrs</span>
-              <span>7+ Enrolled</span>
-            </div>
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
+## 🖥️ Lab Environment
 
-       <!-- Jasmin SMS Gateway Training -->
-      <article class="course-card" data-reveal data-delay="100" data-category="sms">
-       <div class="course-banner" style="background:linear-gradient(135deg,#1f0d2b,#3a1a4a);"><img width="90%" height="60%" src="./images/jasmin.png" alt="Jasmin SMS Gateway Training - SMS System"></div>
-        <div class="course-body">
-          <div class="course-tags">
-            <span class="tag tag-cyan">Hot</span>
-            <span class="tag tag-amber">Intermediate</span>
-          </div>
-          <h2 class="course-title">Jasmin SMS Gateway Training</h2>
-          <p class="course-desc">Learn to build a production-ready bulk SMS system with Jasmin SMS Gateway and playSMS for legitimate business SMS delivery.</p>
-          <ul style="font-size:0.8rem; color:var(--text-muted); margin-bottom:16px; padding-left:0;">
-            <li style="margin-bottom:4px;">✔ Instructor-Led Training</li>
-            <li style="margin-bottom:4px;">✔ 15 Hands-on Training Modules</li>
-            <li style="margin-bottom:4px;">✔ Client Acquisition Service Development</li>
-            <li>✔ Credential Verification Support</li>
-          </ul>
-          <div class="course-meta">
-             <span class="course-price">$700</span>
-           <div class="course-info">
-              <span>30 hrs</span>
-              <span>14+ Enrolled</span>
-            </div>
-          </div>
-          <a href="enrollment.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enroll Now</a>
-        </div>
-      </article>
-    </div>
+Each participant is provisioned with an isolated lab environment consisting of:
 
-<!-- FAQ -->
-<section class="section" style="background:var(--bg-secondary);" aria-labelledby="faq-heading">
-  <div class="container" style="max-width:720px;">
-  <h2 id="faq-heading"><span style="color:var(--text-primary)">Frequently Asked Questions</span></h2>
-    
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-question">What is Instructor-Led Training (ILT)? <span class="faq-icon">+</span></button>
-        <div class="faq-answer"><div class="faq-answer-inner">At School of Freelancing, Instructor-Led Training (ILT) provides live, instructor-guided learning through structured training modules with real-time interaction and hands-on practice.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">What is Guaranteed minimum income (GMI)? <span class="faq-icon">+</span></button>
-        <div class="faq-answer"><div class="faq-answer-inner">School of Freelancing's Guaranteed Minimum Income (GMI) ensures eligible trainees earn a minimum income after completing the program by following our guidelines.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question">What is Client Acquisition Service Development? <span class="faq-icon">+</span></button>
-        <div class="faq-answer"><div class="faq-answer-inner">During the training, the instructor will guide you in building a professional marketplace portfolio, creating service listings, and optimizing your presence for client acquisition.</div></div>
-      </div>
-     
-      <div class="faq-item">
-        <button class="faq-question">What is Credential Verification Support? <span class="faq-icon">+</span></button>
-        <div class="faq-answer"><div class="faq-answer-inner">School of Freelancing offers Credential Verification Support — if any organization wants to confirm a student's training, they can verify your credentials directly with us.</div></div>
-      </div>
-       <div class="faq-item">
-        <button class="faq-question">Can I pay in installments? <span class="faq-icon">+</span></button>
-        <div class="faq-answer"><div class="faq-answer-inner">Yes. We offer 2 and 3-month installment plans on all courses. Select your preferred payment plan during enrollment. We accept cards, PayPal, and bank transfers.</div></div>
-      </div>
-    </div>
-  </div>
-</section>
+| Component | Specification |
+|---|---|
+| Dev Workstation | Cloud IDE (VS Code Server) with a supported SDK language runtime |
+| Claude Access | Sandboxed Console organization with a capped usage budget per participant |
+| Identity Provider | Mock IdP (e.g., Okta/Azure AD sandbox) for SSO/SCIM labs |
+| Claude Code | Pre-installed in the lab workstation, with a sample repository |
+| Supporting Services | Git server, a small internal API/service for tool-use labs, logging/reporting dashboard |
+| Access | Browser-based terminal/IDE, Console admin access scoped to the lab organization |
 
-<!-- FOOTER -->
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:16px;">
-          <div class="logo-icon">$_</div><span>School of Freelancing</span>
-        </a>
-       <p>School of Freelancing provides Linux-based training and expert Support to help freelancers and clients build, solve, and scale with confidence in real-world projects.</p>
-        <div class="footer-social">
-<a href="https://github.com/SchoolOfFreelancing" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-<a href="https://www.youtube.com/@SchoolOfFreelancing" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-<a href="https://www.linkedin.com/company/schooloffreelancing" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-<a href="https://www.facebook.com/SchoolOfFreelancing" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
-<a href="https://instagram.com/schooloffreelancing" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-<a href="https://www.threads.com/schooloffreelancing" target="_blank" rel="noopener noreferrer" aria-label="Threads"><i class="fa-brands fa-threads"></i></a>
-<a href="https://wa.me/8801748973769" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-<a href="https://t.me/SchoolOfFreelancingTraining" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
-<a href="https://x.com/FreelancingOf" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
-      </div>
-      
-      <div class="footer-col">
-        <h4>Training</h4>
-        <ul class="footer-links">
-          <li><a href="training.html" target="_self">Linux Freelancing Training</a></li>
-          <li><a href="training.html" target="_self">Hermes Agent Training</a></li>
-          <li><a href="training.html" target="_self">AI Workspace Training</a></li>
-          <li><a href="training.html" target="_self">DevOps Training</a></li>
-          <li><a href="training.html" target="_self">VoIP Training</a></li>
-          <li><a href="training.html" target="_self">View All Training</a></li>
-        </ul>
-      </div>
-      
-            <div class="footer-col">
-        <h4>Support</h4>
-        <ul class="footer-links">
-          <li><a href="support.html" target="_self">Linux System Administration</a></li>
-          <li><a href="support.html" target="_self">Telnyx SMS API</a></li>
-          <li><a href="support.html" target="_self">Twilio SMS API</a></li>
-          <li><a href="support.html" target="_self">Hummingbot Full Setup</a></li>
-          <li><a href="support.html" target="_self">Self-hosted AI Workspace</a></li>
-          <li><a href="support.html" target="_self">Hermes Agent Full Setup</a></li>
-        </ul>
-      </div>
-            <div class="footer-col">
-         <h4>Legal</h4>
-        <ul class="footer-links">
-          <li><a href="faq.html" target="_self">FAQs</a></li>
-          <li><a href="https://github.com/SchoolOfFreelancing/Back-Office/issues/new" target="_blank">Report Issue</a></li>
-          <li><a href="https://docs.google.com/document/d/100hITwSCOdhseu5dZUq9zSGKJ6lehx1i80rg6lJYVqQ/edit?usp=sharing" target="_blank">Terms & Conditions</a></li>
-          <li><a href="https://docs.google.com/document/d/1gsSzuGvcHM8JjuwuH_Uu_bcG5LkAZFlLJZ4UNJGlP7I/edit?usp=sharing" target="_blank">Privacy Policy</a></li>
-          <li><a href="https://github.com/SchoolOfFreelancing/Back-Office/wiki" target="_blank">Training Rules</a></li>
-          <li><a href="https://github.com/SchoolOfFreelancing/Back-Office/wiki/Refund-Policy" target="_blank">Refund Policy</a></li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="footer-bottom">
-      <p>© School of Freelancing. All rights reserved. Built with ❤️ from Bangladesh.</p>
-   </div>
-  </div>
-</footer>
+> 💡 A cloud-based lab or a fully local (Docker Compose) option is provided — see [`/labs/environment-setup`](./labs/environment-setup).
 
-<script src="js/main.js"></script>
-<script>
-// Filter functionality
-document.querySelectorAll('.filter-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn').forEach(b => {
-      b.classList.remove('btn-primary'); b.classList.add('btn-secondary');
-      b.setAttribute('aria-pressed', 'false');
-    });
-    btn.classList.add('btn-primary'); btn.classList.remove('btn-secondary');
-    btn.setAttribute('aria-pressed', 'true');
-    const filter = btn.dataset.filter;
-    let count = 0;
-    document.querySelectorAll('.course-card').forEach(card => {
-      const match = filter === 'all' || card.dataset.category === filter;
-      card.style.display = match ? '' : 'none';
-      if (match) count++;
-    });
-    document.getElementById('course-count').textContent = count;
-  });
-});
-</script>
-</body>
-</html>
+---
+
+## 🗓️ Training Schedule
+
+### Day 1: Platform Landscape & Console Fundamentals
+
+**Morning — Concepts**
+- Claude Platform landscape: Claude.ai (consumer/pro/team), Claude Developer Platform (API), Claude Code, and Claude Cowork — what each is for
+- Console fundamentals: organizations, workspaces, members, and API keys
+- Model catalog overview and how to choose a model for a given workload (capability vs. latency vs. cost)
+- Plan tiers and account types at a high level (individual, team, enterprise)
+
+**Afternoon — Hands-on Labs**
+- **Lab 1.1:** Set up a Console organization, create a workspace, and generate your first API key
+- **Lab 1.2:** Send your first API request and inspect the response structure
+- **Lab 1.3:** Explore the model catalog and compare responses/latency across models for the same prompt
+- **Lab 1.4:** Tour the Console's usage dashboard and billing pages
+
+**Deliverable:** A configured lab organization with a workspace, API key, and a documented model-selection rationale for a sample use case.
+
+---
+
+### Day 2: Building with the API
+
+**Morning — Concepts**
+- The Messages API: system prompts, multi-turn conversations, and streaming
+- Prompt engineering fundamentals for Claude: clear instructions, examples, XML tags, and structured output patterns
+- Vision inputs and multimodal prompting
+- Tool use (function calling): defining tools, handling tool-call responses, and multi-step tool loops
+- Extended thinking and when to use it
+- Prompt caching and batching for cost/latency optimization
+
+**Afternoon — Hands-on Labs**
+- **Lab 2.1:** Build a multi-turn conversational app with streaming responses
+- **Lab 2.2:** Design and test a structured-output prompt (e.g., JSON extraction) with clear success criteria
+- **Lab 2.3:** Implement tool use — connect Claude to a sample internal API via a defined tool schema
+- **Lab 2.4:** Add prompt caching to reduce latency/cost on a repeated-context workload
+- **Lab 2.5:** Benchmark and document cost/latency trade-offs across two model choices for the same task
+
+**Deliverable:** A working tool-use-enabled application with documented prompt design decisions and a cost/latency benchmark.
+
+---
+
+### Day 3: Claude Code & Agentic Workflows
+
+**Morning — Concepts**
+- Claude Code overview: installation, authentication, and supported environments (terminal, IDE extensions, desktop app)
+- Core workflows: understanding codebases, fixing bugs, refactoring, writing tests, generating documentation
+- Configuration: project-level settings, permissions, and custom slash commands
+- Extending Claude Code with the Model Context Protocol (MCP): connecting internal tools and data sources
+- Subagents and multi-step agentic task delegation
+- Claude Cowork for non-developer, multi-step knowledge work (research, document generation, cross-tool tasks)
+
+**Afternoon — Hands-on Labs**
+- **Lab 3.1:** Install and configure Claude Code against the lab's sample repository
+- **Lab 3.2:** Use Claude Code to onboard onto an unfamiliar codebase and fix a seeded bug
+- **Lab 3.3:** Connect an MCP server (e.g., a Git host or issue tracker) and use it from Claude Code
+- **Lab 3.4:** Create a custom slash command and a project-scoped configuration for team standardization
+- **Lab 3.5:** Explore a Claude Cowork-style multi-step task and compare it against a developer-focused Claude Code task
+
+**Deliverable:** A documented Claude Code setup (config + MCP integration + custom command) suitable for team-wide rollout, plus a short comparison memo on when to use Claude Code vs. Cowork vs. the raw API.
+
+---
+
+### Day 4: Organization Management, Security & Governance
+
+**Morning — Concepts**
+- Organization structure: workspaces, roles, and permission boundaries
+- Identity and access: SSO and SCIM provisioning, member lifecycle management
+- API key management: scoping, rotation policies, and secrets handling
+- Data governance: data retention settings, training/opt-out controls, and audit logging
+- Content safety: usage policies and platform safety tooling relevant to enterprise deployments
+- Compliance considerations or organizations evaluating Claude (data residency, certifications) — pointers to current documentation
+
+**Afternoon — Hands-on Labs**
+- **Lab 4.1:** Configure SSO against the mock Identity Provider and test SCIM-based user provisioning
+- **Lab 4.2:** Design a workspace and role structure for a multi-team organization (e.g., separate workspaces per product team with scoped API keys)
+- **Lab 4.3:** Implement an API key rotation policy and audit-log review process
+- **Lab 4.4:** Review and configure data retention and privacy-relevant settings for the lab organization
+- **Lab 4.5:** Draft an internal AI usage policy covering acceptable use, data handling, and escalation paths
+
+**Deliverable:** A governed lab organization with SSO, scoped workspaces/roles, a key-rotation runbook, and a written internal usage policy.
+
+---
+
+### Day 5: Scaling, Cost Management & Production Operations
+
+**Morning — Concepts**
+- Usage and cost monitoring: reading Console usage reports, per-workspace attribution, chargeback models
+- Rate limits and capacity planning for production workloads; handling throttling gracefully
+- Reliability patterns: retries/backoff, timeouts, and fallback strategies
+- Observability: logging, tracing, and building internal dashboards for latency/cost/error rate
+- Change management: rolling out new models, deprecations, and version-pinning strategy
+- Building an internal center of excellence: enablement, support channels, and feedback loops
+
+**Afternoon — Hands-on Labs**
+- **Lab 5.1:** Build a usage/cost dashboard aggregating API and workspace-level data
+- **Lab 5.2:** Implement retry/backoff and graceful degradation for rate-limited requests
+- **Lab 5.3:** Set up alerting for budget thresholds and anomalous usage spikes
+- **Lab 5.4:** Draft a model-upgrade/version-pinning runbook for production applications
+- **Lab 5.5 (Capstone):** Present a complete organizational rollout plan — Console structure, security controls, developer tooling (API + Claude Code), cost governance, and an enablement plan — for a fictional company scenario
+
+**Deliverable (Capstone Project):** A full Claude Platform management plan and lab implementation: governed org structure, working API/Claude Code integrations, monitoring dashboard, and a written rollout/enablement strategy.
+
+---
+
+## 📁 Repository Structure
+
+```
+claude-platform-training/
+├── README.md
+├── slides/                        # Day-by-day presentation decks
+│   ├── day1-platform-fundamentals.pdf
+│   ├── day2-building-with-the-api.pdf
+│   ├── day3-claude-code-and-agents.pdf
+│   ├── day4-governance-and-security.pdf
+│   └── day5-scaling-and-operations.pdf
+├── labs/
+│   ├── environment-setup/         # Docker Compose / Terraform lab bootstrap
+│   ├── day1/
+│   ├── day2/
+│   ├── day3/
+│   ├── day4/
+│   └── day5/
+├── app/
+│   ├── api-client/                 # Reference API client wrappers
+│   ├── tool-use-examples/
+│   └── prompt-library/
+├── claude-code/
+│   ├── sample-repo/                # Seeded repository with bugs/tasks for Day 3
+│   ├── mcp-servers/                 # Example MCP server configs
+│   └── custom-commands/
+├── governance/
+│   ├── sso-scim/                    # Mock IdP configs
+│   ├── policy-templates/            # Sample usage policy, key-rotation runbook
+│   └── reporting/                   # Usage/cost dashboard starter
+├── solutions/                        # Reference solutions for each lab
+└── docs/
+    ├── troubleshooting.md
+    ├── architecture-diagrams/
+    └── glossary.md
+```
+
+## 🚀 Getting Started
+
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/<your-org>/claude-platform-training.git
+   cd claude-platform-training
+   ```
+
+2. **Provision your lab environment:**
+   ```bash
+   cd labs/environment-setup
+   docker compose up -d
+   ```
+
+3. **Configure your credentials:**
+   ```bash
+   cp .env.example .env
+   # Add your sandboxed ANTHROPIC_API_KEY and lab org details to .env
+   ```
+
+4. **Verify prerequisites:**
+   ```bash
+   ./labs/environment-setup/scripts/check-prereqs.sh
+   ```
+
+5. **Start with Day 1:**
+   ```bash
+   cd labs/day1
+   cat README.md
+   ```
+
+## 🧪 Lab Exercises
+
+Each day's lab folder (`labs/dayN/`) contains:
+- `README.md` — step-by-step instructions and success criteria
+- `starter/` — starting-point code and configs
+- `hints.md` — progressive hints for anyone who gets stuck
+- Corresponding reference solution in `solutions/dayN/`
+
+Labs are designed to be completed sequentially, with each day building on the organizational and technical setup created the day before.
+
+## 📜 Assessment & Certification
+
+- **Daily checkpoints:** short knowledge checks at the end of each day
+- **Capstone project (Day 5):** graded on completeness of the governance plan, technical implementation, and clarity of the enablement/rollout strategy
+- **Certificate of completion** issued to participants who complete all daily labs and the capstone project
+
+## 🏗️ Reference Architecture
+
+The course builds toward the following organizational management structure:
+
+```
+                     ┌─────────────────────────┐
+                     │   Claude Console          │
+                     │  (Organization root)      │
+                     └──────────────┬────────────┘
+                                    │
+             ┌──────────────────────┼──────────────────────┐
+             │                      │                      │
+   ┌─────────▼─────────┐  ┌─────────▼─────────┐  ┌─────────▼─────────┐
+   │  Workspace: Eng     │  │  Workspace: Data   │  │  Workspace: Ops    │
+   │  (scoped API keys,  │  │  (scoped API keys, │  │  (scoped API keys, │
+   │   budget limits)    │  │   budget limits)   │  │   budget limits)   │
+   └─────────┬─────────┘  └─────────┬─────────┘  └─────────┬─────────┘
+             │                      │                      │
+   ┌─────────▼─────────┐  ┌─────────▼─────────┐  ┌─────────▼─────────┐
+   │  API Applications  │  │  Claude Code        │  │  Reporting /       │
+   │  (Messages API,     │  │  (dev workflows,    │  │  Cost Dashboard    │
+   │   tool use)          │  │   MCP servers)      │  │                    │
+   └────────────────────┘  └────────────────────┘  └────────────────────┘
+
+     Cross-cutting: SSO/SCIM, Audit Logs, Data Retention Policy, Usage Alerts
+```
+
+See [`docs/architecture-diagrams/`](./docs/architecture-diagrams) for detailed diagrams per day.
+
+## 🛠️ Troubleshooting Guide
+
+Common issues and resolutions are documented in [`docs/troubleshooting.md`](./docs/troubleshooting.md), covering:
+- Rate limit and throttling errors under load
+- API key scoping and permission errors across workspaces
+- SSO/SCIM provisioning mismatches
+- MCP server connection failures in Claude Code
+- Unexpected cost spikes and how to trace them to a workspace/key
+- Tool-use loops and malformed tool-call arguments
+
+## 📚 Additional Resources
+
+> Product details (models, plans, limits, and console features) change frequently — always confirm against current official docs before teaching or deploying.
+
+- Claude Developer Platform documentation: https://docs.claude.com
+- Claude Code documentation: https://docs.claude.com/en/docs/claude-code/overview
+- Claude.ai / Claude Cowork support: https://support.claude.com
+- Anthropic product news: https://www.anthropic.com/news
+- Enterprise/sales inquiries: https://www.anthropic.com/contact-sales
+
+## 🤝 Contributing
+
+Contributions to improve labs, fix errata, or add advanced modules are welcome. Please open an issue or submit a pull request following the guidelines in `CONTRIBUTING.md`.
+
+## 📄 License
+
+This training material is released under the [MIT License](./LICENSE).
+
+---
+
+*Questions or feedback? Open an issue in this repository or contact the training team.*
